@@ -6,7 +6,8 @@ class GiantAction(Action):
     CARD = Cards.GIANT
 
     def calculate_score(self, state):
-        if state.numbers.elixir.number != 10:
+        # Much more aggressive - play Giant when we have 6+ elixir instead of exactly 10
+        if state.numbers.elixir.number < 6:
             return [0]
 
         left_hp = state.numbers.left_enemy_princess_hp.number

@@ -20,8 +20,13 @@ def _is_branch_late() -> bool:
     return "Your branch is up to date" not in status
 
 
-def _check_and_pull_updates() -> None:
+def _check_and_pull_updates(auto_update=False) -> None:
     if not _is_branch_late():
+        return
+
+    if auto_update:
+        logger.info("Auto-updating bot in continuous mode...")
+        subprocess.run(["git", "pull"], check=True, capture_output=True, text=True)
         return
 
     should_update = input(
@@ -32,9 +37,9 @@ def _check_and_pull_updates() -> None:
     subprocess.run(["git", "pull"], check=True, capture_output=True, text=True)
 
 
-def check_and_pull_updates() -> None:
+def check_and_pull_updates(auto_update=False) -> None:
     try:
-        _check_and_pull_updates()
+        _check_and_pull_updates(auto_update)
     except subprocess.CalledProcessError as e:
         if "not a git repository" in e.stderr:
             err = "We recommend getting the project using git."

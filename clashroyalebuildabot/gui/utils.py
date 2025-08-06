@@ -15,6 +15,12 @@ def load_config():
         raise WikifiedError("002", "Can't parse config.") from e
 
 
+def load_enhanced_config():
+    """Load enhanced configuration for maximum AI performance (now uses standard config)"""
+    # Enhanced config has been removed, use standard config
+    return load_config()
+
+
 def save_config(config):
     try:
         config_path = os.path.join(SRC_DIR, "config.yaml")

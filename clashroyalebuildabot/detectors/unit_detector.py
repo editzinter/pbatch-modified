@@ -19,9 +19,9 @@ from clashroyalebuildabot.namespaces.units import UnitDetection
 
 
 class UnitDetector(OnnxDetector):
-    MIN_CONF = 0.3
+    MIN_CONF = 0.2  # Lowered from 0.3 for better detection sensitivity
     UNIT_Y_START = 0.05
-    UNIT_Y_END = 0.80
+    UNIT_Y_END = 0.85  # Increased from 0.80 for better coverage
 
     def __init__(self, model_path, cards):
         super().__init__(model_path)

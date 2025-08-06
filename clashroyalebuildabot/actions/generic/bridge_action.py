@@ -11,7 +11,8 @@ class BridgeAction(Action):
         if (self.tile_x, self.tile_y) not in {(3, 15), (14, 15)}:
             return [0]
 
-        if state.numbers.elixir.number != 10:
+        # Much more aggressive - play bridge cards when we have 7+ elixir instead of exactly 10
+        if state.numbers.elixir.number < 7:
             return [0]
 
         left_hp = state.numbers.left_enemy_princess_hp.number

@@ -187,8 +187,10 @@ class Emulator:
                     format="rgb24",
                 ).to_image()
 
-            except av.AVError as av_error:
+            except av.error.AVError as av_error:
                 logger.error(f"Error while decoding video stream: {av_error}")
+            except Exception as av_error:
+                logger.error(f"AV decoding error: {av_error}")
             except Exception as e:
                 logger.error(f"Unexpected error in frame update: {str(e)}")
 
@@ -248,7 +250,7 @@ class Emulator:
 
         return screenshot
 
-    def load_deck(self, cards):
+    def load_deck(self, cards, skip_prompt=False):
         id_str = ";".join([str(card.id_) for card in cards])
         slot_str = ";".join("0" for _ in range(len(cards)))
         url = "&".join(
@@ -272,4 +274,6 @@ class Emulator:
                 f"'{url}'",
             ]
         )
-        input("Press a key when you've finished copying the deck ")
+        
+        if not skip_prompt:
+            input("Press a key when you've finished copying the deck ")

@@ -17,12 +17,12 @@ class _ScreensNamespace:
     LOBBY: Screen = Screen(
         "lobby",
         (424, 126, 506, 181),
-        (360, 820),
+        (357.8, 984.2),  # Battle button coordinates from your measurements
     )
     END_OF_GAME: Screen = Screen(
         "end_of_game",
         (279, 1095, 440, 1154),
-        (360, 1125),
+        (360.0, 1157.9),  # Primary OK button coordinates from your measurements
     )
 
 

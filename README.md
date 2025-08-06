@@ -1,18 +1,6 @@
 <div align="center">
 
-📌 This bot is under active development and may experience minor issues.  
-Please report any bugs on Discord, and we will fix them promptly.
-
-<table>
-    <tr>
-        <td align="center">
-            <img src="https://github.com/user-attachments/assets/554485fb-5d80-43bd-8096-07b6b38330db" alt="GUI">
-        </td>
-        <td align="center">
-            <img src="https://github.com/user-attachments/assets/45165830-caab-4ee3-8552-6c982bf269fa" alt="ClashRoyaleBuildABot">
-        </td>
-    </tr>
-</table>
+# Clash Royale Build-A-Bot
 
 Welcome to Clash Royale Build-A-Bot! This project provides an advanced state generator that accurately returns detailed information using cutting-edge technologies.
 
@@ -20,22 +8,20 @@ Welcome to Clash Royale Build-A-Bot! This project provides an advanced state gen
 [![Python 3.10.0](https://img.shields.io/badge/python-3.10.0-00c8d6?style=flat&logo=python&logoColor=white)](https://www.python.org/downloads/release/python-3100/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-17-00c8d6?style=flat)](#contributors-)
 
-[**Getting Started**](#getting-started-with-your-clash-royale-bot) |
-[**Data**](#data) |
-[**Contributors**](#contributors-)
-
 </div>
+
+---
+
+## Acknowledgements
+
+This project is a fork of the original [ClashRoyaleBuildABot](https://github.com/Pbatch/ClashRoyaleBuildABot) by Pbatch. We are grateful for their work and have used it as a foundation for our own development.
 
 ---
 
 ## Getting Started with Your Clash Royale Bot 🛠️
 
 Follow these steps to set up your environment:
-<!--
-[**Watch the Installation Video**](https://www.youtube.com/watch?v=00OwHapmO7M) 
 
-**or:**
--->
 1. **Install and Configure the Emulator:** Follow our [Emulator Setup Guide](https://github.com/Pbatch/ClashRoyaleBuildABot/wiki/Emulator-Setup-Guide).
 2. **Install Python, PIP, and Git:** Go through our [Python, PIP & Git Setup Guide](https://github.com/Pbatch/ClashRoyaleBuildABot/wiki/Python,-PIP,-&-Git-Setup-Guide).
 3. **Install and Configure Your Bot:** Use our [Bot Installation Guide](https://github.com/Pbatch/ClashRoyaleBuildABot/wiki/Bot-Installation-Setup-Guide).
@@ -113,10 +99,13 @@ This project follows the [all-contributors](https://github.com/all-contributors/
     </tr>
   </tbody>
 </table>
-
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-#   p b a t c h - m o d i f i e d  
- "# pbatch-modified" 
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

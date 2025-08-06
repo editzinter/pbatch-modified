@@ -10,7 +10,7 @@ class SpellAction(Action):
     """
 
     RADIUS = None
-    MIN_SCORE = 5
+    MIN_SCORE = 2  # Much more aggressive - play spells more often
     UNIT_TO_SCORE = {Units.SKELETON: 1}
 
     def calculate_score(self, state):
