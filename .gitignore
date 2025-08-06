@@ -10,3 +10,5 @@ clashroyalebuildabot/debug
 clashroyalebuildabot/emulator/platform-tools
 env/
 crbab-venv/
+cudnn_libs/
+cuda_libs/
